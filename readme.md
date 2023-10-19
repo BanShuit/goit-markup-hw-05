@@ -1,2 +1,1 @@
-https://github.com/BanShuit/goit-markup-hw-05.git
-
+https://banshuit.github.io/goit-markup-hw-05/
