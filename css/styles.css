@@ -39,9 +39,7 @@ padding-right: 15px;*/
     color: var(--marka-color);
 }
 
-.link:active {
-    color: var(--marka-color);
-}
+
 
 .link:focus {
     color: var(--marka-color);
@@ -784,18 +782,28 @@ p {
 }
 .underline{
     position: relative;
-    color:var(--marka-color)
+    color:var(--marka-color) 
 }
-.underline::after {
-    content: '';
-    height: 4px;
+.underline:hover::after {
     width: 100%;
-    background-color: var(--pressed-state);
-    border-radius: 2px;
+        transition: 250ms;
+}
+.active{
+    position: relative;
+    color: #404bbf;
+    width: 100%;
+}
+.active::after {
+    content: "";
     position: absolute;
+    background-color: #404BBF;
+    height: 4px;
+    border-radius: 2px;
+    width: 100%;
     left: 0;
     bottom: -1px;
 }
+
 .modal{
     position: absolute;
         background: var(--modal-background);
