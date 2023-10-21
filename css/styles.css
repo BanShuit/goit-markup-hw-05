@@ -55,6 +55,7 @@ padding-right: 15px;*/
     --cloud-color: #F4F4FD;
     --white-background: #FFFFFF;
     --modal-background: #FCFCFC;
+    --transition-variable: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -141,7 +142,10 @@ button {
     border-radius: 4px;
     padding: 12px 24px;
     border: 1px solid var(--cornflower-color);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--transition-variable),
+            background-color 250ms var(--transition-variable),
+            border-color 250ms var(--transition-variable),
+            box-shadow 250ms var(--transition-variable);
 }
 
 .button-one:focus,
@@ -262,15 +266,18 @@ footer {
 
 
 .button-two:focus {
-    background-color: var(--marka-color);
-        cursor: pointer;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #404bbf;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-style: none;
 }
 
 .button-two:hover {
-    background-color: var(--marka-color);
-        cursor: pointer;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #404bbf;;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-style: none;
+            
 }
 
 .heading-section-one {
@@ -771,7 +778,7 @@ p {
 
 .link-portfolio {
     display: block;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms var(--transition-variable);
 }
 
 .link-portfolio:hover,
@@ -779,13 +786,14 @@ p {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+        transform: translateY(0%);
 }
 .underline{
     position: relative; 
 }
 .underline:hover::after {
     width: 100%;
-        transition: 250ms;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .active{
     position: relative;
@@ -890,9 +898,25 @@ translate: 0;
 .close-button:focus {
     background-color: var(--marka-color);
     border: none;
-    fill: var(--white-background)
+    fill: #ffffff;
 }
  
 .close-button-svg {
+position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    background-color: #E7E9FC;
+    fill: #2E2F42;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-icon{
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
