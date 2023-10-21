@@ -781,8 +781,7 @@ p {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .underline{
-    position: relative;
-    color:var(--marka-color) 
+    position: relative; 
 }
 .underline:hover::after {
     width: 100%;
@@ -893,7 +892,7 @@ translate: 0;
     border: none;
     fill: var(--white-background)
 }
-
+ 
 .close-button-svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
