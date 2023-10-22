@@ -707,6 +707,7 @@ p {
     position: relative;
     overflow: hidden;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
 .extra-cover {
