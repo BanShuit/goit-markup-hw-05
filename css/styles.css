@@ -37,6 +37,7 @@ padding-right: 15px;*/
 
 .link:hover {
     color: var(--marka-color);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 
@@ -210,6 +211,7 @@ footer {
 .contacts-top:hover,
 .contacts-top:active {
     color: var(--marka-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-one {
@@ -535,11 +537,7 @@ img {
 .imagese {
 width: calc((100% - 48px) / 3) ;
 }
-.imagese:hover,
-.imagese:focus{
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 .images{
     display: block;
         max-width: 100%;
@@ -636,6 +634,7 @@ p {
 .footer-svg:hover,
 .footer-svg:focus {
     background-color: #31d0aa;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-svg {
@@ -762,7 +761,10 @@ p {
 }
 
 .svg-click:hover,
-.svg-click:focus {}
+.svg-click:focus {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .div-margin {
     margin-right: 120px;
@@ -786,16 +788,18 @@ p {
 
 .link-portfolio {
     display: block;
-    transition: box-shadow 250ms var(--transition-variable);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-portfolio:hover,
 .link-portfolio:focus {
 transform: translateY(0%);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .underline{
     position: relative;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .underline:hover::after {
     width: 100%;
@@ -826,12 +830,13 @@ transform: translateY(0%);
 
 .white{
     background-color: #4d5ae5;
-        height: 100%;
-        padding: 40px 32px;
-        position: absolute;
-        top: 0;
-        transform: translateY(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0 2, 1);
+    color: #F4F4FD;
+    height: 100%;
+    padding: 40px 32px;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-portfolio:hover .white,
 .link-portfolio:focus .white {
