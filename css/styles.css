@@ -108,7 +108,9 @@ s.list {
     align-items: center;
     padding: 24px 0
 }
-
+.nav:hover{
+    color: ;
+}
 
 .contacts {
     font-family: Roboto;
@@ -185,15 +187,17 @@ button {
 
 footer {
     background-color: #2E2F42;
-    padding: 100px 0 100px
+    padding: 100px 0 100px;
+    height: 312px ;
 }
 
 .paragraph-footer {
     color: #F4F4FD;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: 24px;
+    letter-spacing: 0.32px;
     justify-content: center;
     max-width: 264px;
+    height: 72px;
 }
 
 .studio-two {
