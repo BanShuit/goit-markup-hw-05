@@ -71,7 +71,7 @@ padding-right: 15px;*/
 }
 
 .logo-footer {
-    margin-bottom: 16px;
+    
 }
 
 .studio-logo {
@@ -880,7 +880,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 }
 .modal:focus,
 .modal:hover{
-fill: #ffffff;
+fill: ;
 }
 
 .close-button {
