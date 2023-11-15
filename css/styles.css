@@ -122,7 +122,6 @@ s.list {
 }
 
 button {
-    border: 1px solid #e7e9fc;
     cursor: pointer;
     border: none;
     border-radius: 4px;
@@ -240,7 +239,6 @@ footer {
     letter-spacing: 0.02em;
     text-align: center;
     color: #F4F4FD;
-    margin-bottom: 48px;
     display: block;
     max-width: 496px;
     margin: 0 auto 48px auto;
